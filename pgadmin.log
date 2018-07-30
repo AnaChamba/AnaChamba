@@ -1,0 +1,894 @@
+2018-02-16 12:38:04 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-16 12:38:08 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-16 12:38:31 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-16 12:38:48 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-16 12:54:49 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 2: from cliente c inner join ordenes o
+        ^
+2018-02-16 13:03:46 ERROR  : ERROR:  inserción o actualización en la tabla «cliente» viola la llave foránea «fk_ciudad»
+DETAIL:  La llave (id_ciudad)=(25) no está presente en la tabla «ciudades».
+2018-02-16 13:04:23 ERROR  : ERROR:  inserción o actualización en la tabla «ciudades» viola la llave foránea «fk_provincia»
+DETAIL:  La llave (id_provincia)=(25) no está presente en la tabla «provincias».
+2018-02-16 13:25:12 ERROR  : ERROR:  no existe la relación «articulos»
+LINE 1: select *from articulos a
+                     ^
+2018-02-16 13:26:08 ERROR  : ERROR:  la referencia a la columna «id_cliente» es ambigua
+LINE 4: where id_cliente =5
+              ^
+2018-02-16 13:26:32 ERROR  : ERROR:  la referencia a la columna «id_cliente» es ambigua
+LINE 4: where id_cliente = 'Consumidor Final'
+              ^
+2018-02-16 13:36:59 ERROR  : ERROR:  error de sintaxis en o cerca de «con»
+LINE 1: create or replace view clientes_ciudades con todos el select...
+                                                 ^
+2018-02-16 13:37:23 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 3: select c.id_cliente,c.nom_cliente,ci.nom_ciudad from ciudade...
+        ^
+2018-02-19 13:11:54 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-20 13:19:43 ERROR  : ERROR:  INSERT tiene más columnas de destino que expresiones
+LINE 2: ... provincias (id_provincia, nom_provincia, estado, responsabl...
+                                                             ^
+2018-02-20 13:35:12 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «provincias_pkey»
+DETAIL:  Ya existe la llave (id_provincia)=(25).
+2018-02-20 13:39:17 ERROR  : ERROR:  error de sintaxis en o cerca de «inner»
+LINE 1:  inner join cliente C
+         ^
+2018-02-20 13:39:57 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 7: select id_cliente from ordenes group by id_cliente having co...
+        ^
+2018-02-20 13:40:05 ERROR  : ERROR:  falta una entrada para la tabla «o» en la cláusula FROM
+LINE 3:  on O.id_cliente = C.id_cliente
+            ^
+2018-02-23 13:22:14 ERROR  : ERROR:  error de sintaxis en o cerca de «procedure»
+LINE 1: create or replace procedure ControlInsertar
+                          ^
+2018-02-23 13:35:58 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 1: select A.nom_articulo, CI.nom_ciudad from ordenes O 
+                               ^
+2018-02-23 13:36:07 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 1: select A.nom_articulo, CI.nom_ciudad from ordenes O 
+                               ^
+2018-02-23 13:36:22 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 15: SELECT ControlInsertar('Cotopaxi','A','FANNY'
+                                                      ^
+2018-02-23 13:36:54 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 15: SELECT ControlInsertar('Cotopaxi','A','FANNY'
+                                                      ^
+2018-02-23 13:41:02 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 15: SELECT ControlInsertar('Cotopaxi','A','FANNY'
+                                                      ^
+2018-02-23 13:43:32 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 5: responsable varchar(50)
+                               ^
+2018-02-23 13:46:24 ERROR  : ERROR:  error de sintaxis en o cerca de «estado»
+LINE 5: estado char,
+        ^
+2018-02-23 13:46:45 ERROR  : ERROR:  el valor null para la columna «id_cliente» viola la restricción not null
+CONTEXT:  sentencia SQL: «INSERT INTO cliente(nom_cliente,dir_cliente,estado,responsable)values(nom_cliente,dir_cliente,estado,responsable)»
+PL/pgSQL function "controlinsertar" line 3 at sentencia SQL
+2018-02-23 13:47:21 ERROR  : ERROR:  el valor null para la columna «id_cliente» viola la restricción not null
+CONTEXT:  sentencia SQL: «INSERT INTO cliente(nom_cliente,dir_cliente,estado,responsable)values(nom_cliente,dir_cliente,estado,responsable)»
+PL/pgSQL function "controlinsertar" line 3 at sentencia SQL
+2018-02-23 13:48:34 ERROR  : ERROR:  el valor null para la columna «id_cliente» viola la restricción not null
+CONTEXT:  sentencia SQL: «INSERT INTO cliente(nom_cliente,dir_cliente,estado,responsable)values(nom_cliente,dir_cliente,estado,responsable)»
+PL/pgSQL function "controlinsertar" line 3 at sentencia SQL
+2018-02-27 09:19:16 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:19:23 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:19:32 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:19:35 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:19:40 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:19:52 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:14 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:24 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:28 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2018-02-27 09:20:32 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2018-02-27 09:20:37 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2018-02-27 09:20:40 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:43 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:47 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:51 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:20:56 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:25:56 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:26:05 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:26:13 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:27:43 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:27:47 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:27:50 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:27:57 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:28:00 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:28:04 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 09:28:07 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 12:43:43 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-02-27 12:49:04 ERROR  : ERROR:  no existe la columna «id_provincias»
+2018-02-27 12:49:42 ERROR  : ERROR:  no existe la columna «nom_provincias»
+2018-02-27 12:49:49 ERROR  : ERROR:  no se pudo crear el índice único «ulq_provincias»
+DETAIL:  La llave (nom_provincia)=(Cotopaxi) está duplicada.
+2018-02-27 12:58:50 ERROR  : ERROR:  no existe la relación «ciudad»
+LINE 2:  inner join ciudad CI
+                    ^
+2018-02-27 12:59:07 ERROR  : ERROR:  no existe la relación «ciudad»
+LINE 2:  inner join ciudad CI
+                    ^
+2018-02-27 13:01:38 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 3:  from ciudades CI inner join provincias P
+         ^
+2018-02-27 13:01:44 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 2:  inner join ciudades CI
+                               ^
+2018-02-27 13:01:58 ERROR  : ERROR:  error de sintaxis en o cerca de «and»
+LINE 3:  and ciudades CI inner join provincias P
+         ^
+2018-02-27 13:03:43 ERROR  : ERROR:  error de sintaxis en o cerca de «and»
+LINE 4:  and ciudades CI inner join provincias P
+         ^
+2018-02-27 13:06:37 ERROR  : ERROR:  error de sintaxis en o cerca de «and»
+LINE 3:  and ciudades CI inner join provincias P
+         ^
+2018-02-27 13:09:04 ERROR  : ERROR:  no existe la columna p.id_ciudad
+LINE 4:  on CI.id_ciudad = P.id_ciudad
+                           ^
+2018-02-27 13:10:43 ERROR  : ERROR:  la sintaxis de entrada no es válida para integer: «Azuay»
+LINE 5:  where P.id_provincia = 'Azuay'
+                                ^
+2018-02-27 13:12:56 ERROR  : ERROR:  no existe la relación «clientes»
+LINE 1: select * from clientes
+                      ^
+2018-02-27 13:13:29 ERROR  : ERROR:  falta una entrada para la tabla «p» en la cláusula FROM
+LINE 1: select C.nom_cliente, P.id_provincia, CI.id_ciudad from clie...
+                              ^
+2018-02-27 13:19:20 ERROR  : ERROR:  error de sintaxis en o cerca de «on»
+LINE 4:  on D.id_orden = O.id_orden 
+         ^
+2018-02-27 13:21:34 ERROR  : ERROR:  falta una entrada para la tabla «c» en la cláusula FROM
+LINE 1: select C.id_cliente,O.id_orden,O.fecha from ordenes O
+               ^
+2018-02-27 13:21:44 ERROR  : ERROR:  falta una entrada para la tabla «c» en la cláusula FROM
+LINE 1: select C.id_cliente,O.id_orden,O.fecha from ordenes O
+               ^
+2018-02-27 13:21:50 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 2:  inner join ciudades CI
+                               ^
+2018-02-27 13:21:56 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 3:  on C.id_ciudad = CI.id_ciudad inner join provincias P
+                                                              ^
+2018-02-27 13:24:16 ERROR  : ERROR:  falta una entrada para la tabla «o» en la cláusula FROM
+LINE 3:  on D.id_orden = O.id_orden 
+                         ^
+2018-02-27 13:24:52 ERROR  : ERROR:  falta una entrada para la tabla «o» en la cláusula FROM
+LINE 3:  on D.id_orden = O.id_orden 
+                         ^
+2018-02-27 13:25:50 ERROR  : ERROR:  falta una entrada para la tabla «o» en la cláusula FROM
+LINE 1: select nom_articulo, O.fecha from articulo A
+                             ^
+2018-02-27 13:29:36 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.nom_ciudad = 'Quito'
+                      ^
+2018-02-27 13:30:37 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.nom_ciudad = 'Quito'
+                      ^
+2018-02-27 13:31:24 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.nom_ciudad = 'Quito'
+                      ^
+2018-02-27 13:31:47 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.nom_ciudad = 'Quito'
+                      ^
+2018-02-27 13:32:25 ERROR  : ERROR:  no existe la columna «nom_ciudad»
+LINE 6:         where nom_ciudad = 'Quito'
+                      ^
+2018-02-27 13:33:37 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 2:         join detalle D
+                              ^
+2018-02-27 13:33:39 ERROR  : ERROR:  falta una entrada para la tabla «o» en la cláusula FROM
+LINE 1: select A.id_articulo,A.nom_articulo, O.fecha from articulo A
+                                             ^
+2018-02-27 13:33:42 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 4:         join ordenes O 
+                               ^
+2018-02-27 13:34:14 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.id_ciudad = 17
+                      ^
+2018-02-27 13:34:51 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 6:         where CI.id_ciudad = 17
+                      ^
+2018-02-27 13:35:28 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 1: select A.id_articulo,A.nom_articulo, CI.id_ciudad from artic...
+                                             ^
+2018-02-27 13:35:31 ERROR  : ERROR:  falta una entrada para la tabla «ci» en la cláusula FROM
+LINE 1: select A.id_articulo,A.nom_articulo, CI.id_ciudad from artic...
+                                             ^
+2018-02-27 13:39:47 ERROR  : ERROR:  no existe la columna o.id
+LINE 7:  on C.id_cliente = O.id=cliente
+                           ^
+2018-02-27 13:42:27 ERROR  : ERROR:  no existe la columna o.id
+LINE 7:  on C.id_cliente = O.id=cliente
+                           ^
+2018-03-06 12:46:36 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-03-06 12:46:47 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-03-06 13:25:41 ERROR  : ERROR:  no existe la función devolver_cliente(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select DEVOLVER_cliente(13,'Fernando Vera','Quito','A','Soph...
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-06 13:26:07 ERROR  : ERROR:  no existe la función devolver_cliente(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select devolver_cliente(13,'Fernando Vera','Quito','A','Soph...
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-06 13:26:38 ERROR  : ERROR:  no existe la función devolver_cliente(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select devolver_cliente(13,'Fernando Vera','Quito','A','Soph...
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-06 13:27:10 ERROR  : ERROR:  no existe la función devolver_cliente(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select devolver_cliente(13,'Fernando Vera','Quito','A','Soph...
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-06 13:29:57 ERROR  : ERROR:  no existe la función devolver_cliente(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select devolver_cliente(13,'Fernando Vera','Quito','A','Soph...
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-06 13:30:24 ERROR  : ERROR:  no existe la relación «devolver_cliente»
+LINE 1: Select * from devolver_cliente
+                      ^
+2018-03-06 13:31:29 ERROR  : ERROR:  no existe la relación «devolver»
+LINE 1: Select * from devolver
+                      ^
+2018-03-06 13:31:33 ERROR  : ERROR:  no existe la función devolver(integer, unknown, unknown, unknown, unknown)
+LINE 1: Select devolver(13,'Fernando Vera','Quito','A','Sophy')
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-03-09 12:53:13 ERROR  : ERROR:  error de sintaxis en o cerca de «:»
+LINE 4: 'select * from articulo where id_articulos=sa:'
+                                                     ^
+2018-03-09 12:53:25 ERROR  : ERROR:  no existe la columna «id_articulos»
+LINE 5: 'select * from articulo where id_articulos=sa;'
+                                      ^
+2018-03-09 12:53:48 ERROR  : ERROR:  no existe la relación «articulos»
+LINE 1: select * from articulos
+                      ^
+2018-03-09 12:54:16 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 2: 
+        ^
+2018-03-09 12:55:18 ERROR  : ERROR:  no existe la columna «sa»
+LINE 4: 'select * from articulo where id_articulo=sa ;'
+                                                  ^
+2018-03-09 12:55:56 ERROR  : ERROR:  no existe la columna «sa»
+LINE 6: 'select * from articulo where id_articulo=sa ;'
+                                                  ^
+2018-03-09 12:56:34 ERROR  : ERROR:  no existe la columna «sa»
+LINE 4: 'select * from articulo where id_articulo=sa ;'
+                                                  ^
+2018-03-23 11:00:41 ERROR  : ERROR:  no existe la columna «spclocation»
+LINE 1: SELECT ts.oid, spcname, spclocation, spcoptions, pg_get_user...
+                                ^
+2018-03-23 11:00:42 ERROR  : Column not found in pgSet: rolcatupdate
+2018-04-07 08:10:20 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-04-07 08:10:30 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-04-07 08:10:39 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-04-07 08:11:50 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-04-07 08:11:55 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-05 13:27:21 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-05 13:27:26 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-05 13:27:31 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-05 13:27:35 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-05 13:27:39 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:11:58 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:12:05 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:12:10 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+password retrieved from file "C:\Users\ITSYADM\AppData\Roaming/postgresql/pgpass.conf"
+
+2018-06-07 07:12:46 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:12:57 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:13:24 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:13:30 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:13:37 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:13:54 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-07 07:41:56 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:42:06 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:42:07 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:42:08 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:42:52 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:44:07 ERROR  : ERROR:  la relación «libro» ya existe
+2018-06-07 07:45:27 ERROR  : ERROR:  error de sintaxis en o cerca de «after»
+LINE 1: after table libros add constraint pk_ide_lib primary key (id...
+        ^
+2018-06-07 07:46:01 ERROR  : ERROR:  error de sintaxis en o cerca de «after»
+LINE 1: after table libros add constraint primary key (ide_lib)
+        ^
+2018-06-07 07:46:27 ERROR  : ERROR:  error de sintaxis en o cerca de «after»
+LINE 1: after table libros add constraint pk_ide_lib primary key (id...
+        ^
+2018-06-07 07:49:07 ERROR  : ERROR:  error de sintaxis en o cerca de «alter»
+LINE 2: alter table libros add constraint pk_ide_lib primary key (id...
+        ^
+2018-06-07 07:52:06 ERROR  : ERROR:  error de sintaxis en o cerca de «(»
+LINE 1: ...char (100) null constraint pk_ide_lib primary key (ide_lib))...
+                                                             ^
+2018-06-07 07:52:34 ERROR  : ERROR:  no se permiten múltiples llaves primarias para la tabla «libros»
+2018-06-07 07:54:20 ERROR  : ERROR:  error de sintaxis en o cerca de «(»
+LINE 2: ...char (100) null constraint pk_ide_lec primary key (ide_lec))...
+                                                             ^
+2018-06-07 07:56:39 ERROR  : ERROR:  error de sintaxis en o cerca de «(»
+LINE 1: ...char (100) null constraint pk_ide_lec primary key (ide_lec))...
+                                                             ^
+2018-06-07 07:57:33 ERROR  : ERROR:  la relación «libros» ya existe
+2018-06-07 07:57:39 ERROR  : ERROR:  la relación «lector» ya existe
+2018-06-07 08:03:47 ERROR  : ERROR:  la relación «prestamo» ya existe
+2018-06-07 08:05:32 ERROR  : ERROR:  la relación «prestamo» ya existe
+2018-06-07 08:07:28 ERROR  : ERROR:  no existe la columna «ide_lib» referida en la llave foránea
+2018-06-07 08:07:41 ERROR  : ERROR:  la relación «libros» ya existe
+2018-06-07 08:08:24 ERROR  : ERROR:  no existe la columna «ide_lib» referida en la llave foránea
+2018-06-07 08:08:36 ERROR  : ERROR:  la relación «prestamo» ya existe
+2018-06-07 08:08:38 ERROR  : ERROR:  la relación «prestamo» ya existe
+2018-06-07 08:09:08 ERROR  : ERROR:  la restricción «fk_ide_lib» para la relación «prestamo» ya existe
+2018-06-07 08:24:59 ERROR  : ERROR:  error de sintaxis en o cerca de «serial»
+LINE 1: insert into lector (ide_lec serial, nombre_lec) values (1'La...
+                                    ^
+2018-06-07 08:25:10 ERROR  : ERROR:  error de sintaxis en o cerca de «serial»
+LINE 1: insert into lector (ide_lec serial, nombre_lec) values (1'La...
+                                    ^
+2018-06-07 08:25:17 ERROR  : ERROR:  error de sintaxis en o cerca de «into»
+LINE 2: insert into lector (ide_lec serial, nombre_lec) values (1'La...
+               ^
+2018-06-07 08:25:23 ERROR  : ERROR:  error de sintaxis en o cerca de «into»
+LINE 3: insert into lector (ide_lec serial, nombre_lec) values (1'La...
+               ^
+2018-06-07 08:26:20 ERROR  : ERROR:  error de sintaxis en o cerca de «into»
+LINE 3: insert into lector (ide_lec serial, nombre_lec) values (01'L...
+               ^
+2018-06-07 08:27:25 ERROR  : ERROR:  error de sintaxis en o cerca de «serial»
+LINE 1: insert into lector (ide_lec serial, nombre_lec) values (01'L...
+                                    ^
+2018-06-07 08:27:53 ERROR  : ERROR:  error de sintaxis en o cerca de «'La cenicienta'»
+LINE 1: ...nsert into lector (ide_lec, nombre_lec) values (01'La cenici...
+                                                             ^
+2018-06-07 08:28:20 ERROR  : ERROR:  una cadena de caracteres entre comillas está inconclusa en o cerca de «'La »
+LINE 1: insert into lector (ide_lec, nombre_lec) values (01'La 
+                                                           ^
+2018-06-07 08:28:25 ERROR  : ERROR:  error de sintaxis en o cerca de «into»
+LINE 2: insert into lector (ide_lec, nombre_lec) values (01'La cenic...
+               ^
+2018-06-07 08:28:56 ERROR  : ERROR:  error de sintaxis en o cerca de «into»
+LINE 3: insert into lector (ide_lec, nombre_lec) values (01'La cenic...
+               ^
+2018-06-07 08:30:33 ERROR  : ERROR:  error de sintaxis en o cerca de «'La cenicienta'»
+LINE 1: ...nsert into lector (ide_lec, nombre_lec) values (01'La cenici...
+                                                             ^
+2018-06-07 08:32:19 ERROR  : ERROR:  error de sintaxis en o cerca de «'Blanca Vieves y los siete enanitos'»
+LINE 1: insert into libros(ide_lib,nombre_lib) values (1'Blanca Viev...
+                                                        ^
+2018-06-07 08:34:33 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «pk_ide_lib»
+DETAIL:  Ya existe la llave (ide_lib)=(1).
+2018-06-07 08:36:37 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «pk_ide_lec»
+DETAIL:  Ya existe la llave (ide_lec)=(1).
+2018-06-07 08:39:01 ERROR  : ERROR:  no existe la columna «idea_lib» en la relación «prestamo»
+LINE 1: insert into prestamo (ide_pre, idea_lib,ide_lec) values (01,...
+                                       ^
+2018-06-07 08:39:12 ERROR  : ERROR:  no existe la columna «idea_lib» en la relación «prestamo»
+LINE 1: insert into prestamo (ide_pre, idea_lib, ide_lec) values (01...
+                                       ^
+2018-06-07 08:39:31 ERROR  : ERROR:  no existe la columna «idea_lib» en la relación «prestamo»
+LINE 1: insert into prestamo (ide_pre, idea_lib, ide_lec) values (01...
+                                       ^
+2018-06-07 08:40:06 ERROR  : ERROR:  no existe la columna «idea_lib» en la relación «prestamo»
+LINE 2: insert into prestamo (ide_pre, idea_lib, ide_lec) values (01...
+                                       ^
+2018-06-07 08:40:10 ERROR  : ERROR:  no existe la columna «idea_lib» en la relación «prestamo»
+LINE 1: insert into prestamo (ide_pre, idea_lib, ide_lec) values (01...
+                                       ^
+2018-06-07 08:40:53 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «pk_ide_pre»
+DETAIL:  Ya existe la llave (ide_pre)=(1).
+2018-06-07 08:44:00 ERROR  : ERROR:  no existe la columna «columna» en la relación «lector»
+LINE 1: update lector set columna='Kenny' where ide_lec=4;
+                          ^
+2018-06-07 08:53:47 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 2: select * from lector
+        ^
+2018-06-07 08:54:12 ERROR  : ERROR:  error de sintaxis en o cerca de «alter»
+LINE 3: alter table libros add constraint pk_ide_lib primary key (id...
+        ^
+2018-06-07 08:54:30 ERROR  : ERROR:  la relación «libros» ya existe
+2018-06-12 13:21:12 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+password retrieved from file "C:\Users\ITSYADM\AppData\Roaming/postgresql/pgpass.conf"
+
+2018-06-14 07:17:06 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-14 07:17:17 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-14 07:17:28 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-14 07:17:38 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-14 07:17:43 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-14 07:18:01 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-06-28 08:20:30 ERROR  : ERROR:  falta una entrada para la tabla «es» en la cláusula FROM
+LINE 3: on es.id_posicion= po.id_posicion
+           ^
+2018-06-28 08:23:25 ERROR  : ERROR:  referencia a la entrada de la cláusula FROM para la tabla «es» no válida
+LINE 4:  on es.id_posicion=po.id_posicion
+            ^
+HINT:  Hay una entrada para la tabla «es», pero no puede ser referenciada desde esta parte de la consulta.
+2018-06-28 08:42:47 ERROR  : ERROR:  la base de datos «hospital» ya existe
+2018-06-28 08:48:42 ERROR  : ERROR:  la referencia a la columna «id_empleado» es ambigua
+LINE 4: join empleado em on id_empleado=esta.id_empleado
+                            ^
+2018-06-28 08:51:43 ERROR  : ERROR:  error de sintaxis en o cerca de «=»
+LINE 4: join empleado em on em_ide_empleado.=esta.id_empleado
+                                            ^
+2018-06-28 08:52:02 ERROR  : ERROR:  error de sintaxis en o cerca de «=»
+LINE 4: join empleado em on em_ide_empleado.=esta.id_empleado
+                                            ^
+2018-06-28 08:52:12 ERROR  : ERROR:  no existe la columna «em_ide_empleado»
+LINE 4: join empleado em on em_ide_empleado=esta.id_empleado
+                            ^
+2018-06-28 08:52:20 ERROR  : ERROR:  no existe la columna em.ide_empleado
+LINE 4: join empleado em on em.ide_empleado=esta.id_empleado
+                            ^
+2018-06-28 08:52:29 ERROR  : ERROR:  no existe la columna esta.ide_empleado
+LINE 4: join empleado em on esta.ide_empleado=esta.id_empleado
+                            ^
+2018-06-28 08:52:39 ERROR  : ERROR:  no existe la columna em.ide_empleado
+LINE 4: join empleado em on em.ide_empleado=esta.id_empleado
+                            ^
+2018-07-05 07:13:55 ERROR  : ERROR:  no existe la función pg_last_xlog_receive_location()
+LINE 1: ...E NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xl...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-07-05 07:13:56 ERROR  : Column not found in pgSet: usecreatedb
+2018-07-05 07:13:58 ERROR  : Column not found in pgSet: usesuper
+2018-07-05 07:13:59 ERROR  : Column not found in pgSet: upsince
+2018-07-05 07:13:59 ERROR  : Column not found in pgSet: confloadedsince
+2018-07-05 07:14:00 ERROR  : Column not found in pgSet: inrecovery
+2018-07-05 07:14:01 ERROR  : Column not found in pgSet: replayloc
+2018-07-05 07:14:01 ERROR  : Column not found in pgSet: receiveloc
+2018-07-05 07:14:01 ERROR  : Column not found in pgSet: replay_timestamp
+2018-07-05 07:14:02 ERROR  : Column not found in pgSet: isreplaypaused
+2018-07-05 07:14:03 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:14:04 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:14:04 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:14:04 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:14:05 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:14:05 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-05 07:28:50 ERROR  : ERROR:  no se puede eliminar tabla "Pedido" porque otros objetos dependen de él
+DETAIL:  valor por omisión para tabla pedido columna id_pedido depende de secuencia "Pedido_id_pedido_seq"
+HINT:  Use DROP ... CASCADE para eliminar además los objetos dependientes.
+2018-07-05 08:03:30 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 1: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:52 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 1: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:53 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 5: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:54 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 5: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:55 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 5: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:55 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 5: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:05:55 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 5: select p.id_pedido,nombre││'_'││apellido as nombre,p.fecha f...
+                                                 ^
+2018-07-05 08:06:40 ERROR  : ERROR:  error de sintaxis en o cerca de «apellido»
+LINE 1: select p.id_pedido,nombre││'_'││ apellido as nombre,p.fecha ...
+                                         ^
+2018-07-05 08:07:06 ERROR  : ERROR:  error de sintaxis en o cerca de «apellido»
+LINE 1: select p.id_pedido,nombre││'_'││ apellido as nombre,p.fecha ...
+                                         ^
+2018-07-05 08:07:32 ERROR  : ERROR:  error de sintaxis en o cerca de «apellido»
+LINE 1: select p.id_pedido,nombre││'_'││ apellido as nombre,p.fecha ...
+                                         ^
+2018-07-05 08:07:51 ERROR  : ERROR:  error de sintaxis en o cerca de «apellido»
+LINE 1: select p.id_pedido,nombre││'_'││ apellido as nombre,p.fecha ...
+                                         ^
+2018-07-05 08:08:28 ERROR  : ERROR:  no existe la columna p.ed_pedido
+LINE 2: on c.id_cliente=p.ed_pedido and p.fecha=' 26/06/2018'
+                        ^
+2018-07-05 08:11:38 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha 26/06/2018
+                                                ^
+2018-07-05 08:11:48 ERROR  : ERROR:  no existe el esquema «p»
+2018-07-05 08:11:56 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 4: select * from pedido 
+        ^
+2018-07-05 08:13:16 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 4: select * from pedido 
+        ^
+2018-07-05 08:13:29 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:13:32 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:13:49 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:14:11 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:14:18 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018;
+                                                       ^
+2018-07-05 08:14:26 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:15:12 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:15:16 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:16:26 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:19:18 ERROR  : ERROR:  error de sintaxis en o cerca de «"mauro"»
+LINE 2: where nombre "mauro"
+                     ^
+2018-07-05 08:19:44 ERROR  : ERROR:  no existe la columna «mauro%»
+LINE 2: where nombre like "mauro%"
+                          ^
+2018-07-05 08:19:55 ERROR  : ERROR:  no existe la columna «mauro%»
+LINE 2: where nombre like "mauro%";
+                          ^
+2018-07-05 08:20:03 ERROR  : ERROR:  no existe la columna «mauro%»
+LINE 2: where cliente like "mauro%";
+                           ^
+2018-07-05 08:21:23 ERROR  : ERROR:  no existe la columna «Mauro%»
+LINE 2: where cliente like "Mauro%";
+                           ^
+2018-07-05 08:26:29 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:28:28 ERROR  : ERROR:  error de sintaxis en o cerca de «and»
+LINE 2: from pedido p,and cliente c
+                      ^
+2018-07-05 08:30:11 ERROR  : ERROR:  error de sintaxis en o cerca de «26»
+LINE 2: on c.id_cliente=p.id_pedido and p.fecha_pedido 26/06/2018
+                                                       ^
+2018-07-05 08:30:57 ERROR  : ERROR:  no existe la columna p.fecha
+LINE 1: ...ect p.id_pedido,nombre||'_'||  apellido as nombre,p.fecha fr...
+                                                             ^
+2018-07-05 08:33:06 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 4: select * from pedido 
+        ^
+2018-07-05 08:46:47 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 5: join cliente c
+                      ^
+2018-07-05 08:47:04 ERROR  : ERROR:  no existe la columna p.fecha
+LINE 3: on d.id_pedido=p.id_pedido and p.fecha = '26/06/2018%'
+                                       ^
+2018-07-05 08:47:15 ERROR  : ERROR:  no existe la columna «id_detalle_pedido»
+LINE 1: select id_detalle_pedido, cliente c 
+               ^
+2018-07-05 08:49:01 ERROR  : ERROR:  no existe la columna «id_detalle_pedido»
+LINE 1: select id_detalle_pedido, nombre, fecha_pedido,nombre 
+               ^
+2018-07-05 08:50:33 ERROR  : ERROR:  no existe la columna «id_detalle_pedido»
+LINE 1: select id_detalle_pedido, nombre, fecha_pedido,nombre 
+               ^
+2018-07-05 08:51:06 ERROR  : ERROR:  no existe la columna «id_detalle_pedido»
+LINE 1: select id_detalle_pedido, nombre, fecha_pedido,nombre, ide_p...
+               ^
+2018-07-05 08:56:55 ERROR  : ERROR:  no existe la columna pr.ide_producto
+LINE 7: on d.id_producto=pr.ide_producto
+                         ^
+2018-07-05 09:02:38 ERROR  : ERROR:  la referencia a la columna «nombre» es ambigua
+LINE 8: where  nombre='Diego' and fecha_pedido='2018-06-26'
+               ^
+2018-07-05 09:03:46 ERROR  : ERROR:  error de sintaxis en o cerca de «from»
+LINE 1: from detalle_pedido d join pedido p
+        ^
+2018-07-05 09:04:30 ERROR  : ERROR:  no existe el tipo «like»
+LINE 8: where  c.nombre=like 'Diego%' and fecha_pedido='2018-06-26'
+                        ^
+2018-07-05 09:06:57 ERROR  : ERROR:  error de sintaxis en o cerca de «where»
+LINE 1: where fecha_pedido='2018-06-26'  and c.nombre='Diego'
+        ^
+2018-07-06 13:48:16 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+password retrieved from file "C:\Users\ITSYADM\AppData\Roaming/postgresql/pgpass.conf"
+
+2018-07-06 13:48:21 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-06 13:48:26 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-06 13:48:32 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-06 13:48:42 ERROR  : ERROR:  no existe la función pg_last_xlog_receive_location()
+LINE 1: ...E NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xl...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-07-06 13:48:43 ERROR  : Column not found in pgSet: usecreatedb
+2018-07-06 13:48:44 ERROR  : Column not found in pgSet: usesuper
+2018-07-06 13:48:44 ERROR  : Column not found in pgSet: upsince
+2018-07-06 13:48:45 ERROR  : Column not found in pgSet: confloadedsince
+2018-07-06 13:48:45 ERROR  : Column not found in pgSet: inrecovery
+2018-07-06 13:48:46 ERROR  : Column not found in pgSet: replayloc
+2018-07-06 13:48:46 ERROR  : Column not found in pgSet: receiveloc
+2018-07-06 13:48:46 ERROR  : Column not found in pgSet: replay_timestamp
+2018-07-06 13:48:47 ERROR  : Column not found in pgSet: isreplaypaused
+2018-07-06 13:48:47 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:48:48 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:48:49 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:48:51 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:48:51 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:48:51 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-06 13:54:54 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 6: );
+        ^
+2018-07-06 13:55:33 ERROR  : ERROR:  no existe la columna «numero» en la relación «jfutbol»
+LINE 1: insert into JFutbol(nombre, apellido, numero, nacionalidad)V...
+                                              ^
+2018-07-06 13:56:30 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 1: insert into JFutbol(nombre, apellido, )VALUES('Antonio','Faz...
+                                              ^
+2018-07-06 13:56:48 ERROR  : ERROR:  no existe la relación «jbaloncesto»
+2018-07-06 13:57:08 ERROR  : ERROR:  no existe la columna «idvoly» referida en la llave foránea
+2018-07-06 13:57:24 ERROR  : ERROR:  no existe la columna «idvoly» referida en la llave foránea
+2018-07-12 07:37:44 ERROR  : ERROR:  INSERT tiene más expresiones que columnas de destino
+LINE 1: ..., 'Maculino', '07-08-1963', '21-02-2015', '1329', '1', 'A00'...
+                                                             ^
+2018-07-12 07:38:34 ERROR  : ERROR:  INSERT tiene más expresiones que columnas de destino
+LINE 1: ... 'Masculino', '07-08-1963', '21-02-2015', '1329', '01', 'A00...
+                                                             ^
+2018-07-12 07:56:36 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «empleado_pkey»
+DETAIL:  Ya existe la llave (numero_empleado)=(10).
+2018-07-12 07:58:14 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «empleado_pkey»
+DETAIL:  Ya existe la llave (numero_empleado)=(15).
+2018-07-12 07:58:37 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «empleado_pkey»
+DETAIL:  Ya existe la llave (numero_empleado)=(15).
+2018-07-12 08:17:04 ERROR  : ERROR:  error de sintaxis en o cerca de «insert»
+LINE 2: insert into departamento (numero_departamento,nombre_departa...
+        ^
+2018-07-12 08:17:23 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «departamento_pkey»
+DETAIL:  Ya existe la llave (numero_departamento)=(B01).
+2018-07-12 08:17:51 ERROR  : ERROR:  error de sintaxis en o cerca de «insert»
+LINE 2: insert into departamento (numero_departamento,nombre_departa...
+        ^
+2018-07-12 08:18:47 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «departamento_pkey»
+DETAIL:  Ya existe la llave (numero_departamento)=(E21).
+2018-07-12 08:19:32 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «departamento_pkey»
+DETAIL:  Ya existe la llave (numero_departamento)=(E21).
+2018-07-12 08:21:23 ERROR  : ERROR:  llave duplicada viola restricción de unicidad «departamento_pkey»
+DETAIL:  Ya existe la llave (numero_departamento)=(E21).
+2018-07-12 08:25:28 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 44: select nombre_empleado||'_'||apellido_empleado as nombre,sal...
+         ^
+2018-07-12 08:25:41 ERROR  : ERROR:  error de sintaxis en o cerca de «select»
+LINE 44: select nombre_empleado||'_'||apellido_empleado as nombre,sal...
+         ^
+2018-07-12 08:33:14 ERROR  : ERROR:  no existe la columna «telefono_empleado»
+LINE 1: select nombre_empleado,apellido_empleado,telefono_empleado
+                                                 ^
+2018-07-12 08:34:26 ERROR  : ERROR:  no existe la columna «telefono_empleado» en la relación «empleado»
+LINE 2: ...numero_empleado,nombre_empleado,apellido_empleado,telefono_e...
+                                                             ^
+2018-07-12 08:36:01 ERROR  : ERROR:  no existe el tipo «genero_empleado»
+LINE 4: ...to like 'O%' or nombre_departamento like 'S%' and genero_emp...
+                                                             ^
+2018-07-12 08:51:21 ERROR  : ERROR:  no existe la columna e.departamento
+LINE 3: on e.departamento=d.numero_departamento
+           ^
+2018-07-12 08:51:38 ERROR  : ERROR:  no existe la columna e.departamento
+LINE 3: on e.departamento=d.numero_departamento
+           ^
+2018-07-12 08:52:37 ERROR  : ERROR:  no existe la columna «nombre»
+LINE 1: select numero_empleado,nombre,apellido
+                               ^
+2018-07-12 08:54:08 ERROR  : ERROR:  no existe la columna e.departamento
+LINE 3: on e.departamento=d.numero_departamento
+           ^
+2018-07-12 08:54:31 ERROR  : ERROR:  no existe la columna e.departamento
+LINE 3: on e.departamento=d.numero_departamento
+           ^
+2018-07-12 08:55:20 ERROR  : ERROR:  no existe la columna «salario»
+LINE 5: order by salario desc
+                 ^
+2018-07-19 08:10:16 ERROR  : ERROR:  no existe la relación «orden»
+LINE 1: select *from orden
+                     ^
+2018-07-19 08:14:30 ERROR  : ERROR:  error de sintaxis en o cerca de «pedido»
+LINE 1: select * pedido
+                 ^
+2018-07-19 08:34:20 ERROR  : ERROR:  la referencia a la columna «id_cliente» es ambigua
+LINE 2: on o.id_cliente = id_cliente
+                          ^
+2018-07-19 08:35:51 ERROR  : ERROR:  no existe la columna «id_ordenes»
+LINE 3: where id_ordenes=01
+              ^
+2018-07-19 08:48:10 ERROR  : ERROR:  no existe la relación «articulos»
+LINE 1: update articulos set precio_articulo =precio_articulo *0.10
+               ^
+2018-07-19 09:04:33 ERROR  : ERROR:  error de sintaxis en o cerca de «joiun»
+LINE 2: from cliente c joiun ordenes o
+                       ^
+2018-07-19 09:04:45 ERROR  : ERROR:  error de sintaxis en o cerca de «fecha»
+LINE 4: where c.estado't'and o fecha'2018-06-15'
+                               ^
+2018-07-19 09:05:10 ERROR  : ERROR:  no existe la columna c.id_ccliente
+LINE 3: on c.id_ccliente =o.id_cliente 
+           ^
+2018-07-19 09:05:21 ERROR  : ERROR:  no existe el esquema «c»
+2018-07-19 09:06:02 ERROR  : ERROR:  error de sintaxis en o cerca de «fecha»
+LINE 4: where c.estado't'and o fecha'2018-06-15'
+                               ^
+2018-07-19 09:06:08 ERROR  : ERROR:  no existe el esquema «c»
+2018-07-19 09:10:29 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-19 09:10:36 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-19 09:10:39 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-19 09:11:13 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-19 09:11:16 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-19 09:11:23 ERROR  : ERROR:  update o delete en «ordenes» viola la llave foránea «fk_orden» en la tabla «detalle»
+DETAIL:  La llave (id_orden)=(1) todavía es referida desde la tabla «detalle».
+2018-07-24 14:17:53 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-24 14:17:58 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-24 14:18:03 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-24 14:18:22 ERROR  : ERROR:  no existe la función pg_last_xlog_receive_location()
+LINE 1: ...E NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xl...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-07-24 14:18:23 ERROR  : Column not found in pgSet: usecreatedb
+2018-07-24 14:18:25 ERROR  : Column not found in pgSet: usesuper
+2018-07-24 14:18:26 ERROR  : Column not found in pgSet: upsince
+2018-07-24 14:18:26 ERROR  : Column not found in pgSet: confloadedsince
+2018-07-24 14:18:27 ERROR  : Column not found in pgSet: inrecovery
+2018-07-24 14:18:28 ERROR  : Column not found in pgSet: replayloc
+2018-07-24 14:18:28 ERROR  : Column not found in pgSet: receiveloc
+2018-07-24 14:18:28 ERROR  : Column not found in pgSet: replay_timestamp
+2018-07-24 14:18:28 ERROR  : Column not found in pgSet: isreplaypaused
+2018-07-24 14:18:29 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:18:30 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:18:30 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:18:30 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:18:31 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:18:31 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:19:39 ERROR  : ERROR:  la base de datos «hola» ya existe
+2018-07-24 14:28:21 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2018-07-24 14:28:30 ERROR  : ERROR:  no existe la función pg_last_xlog_receive_location()
+LINE 1: ...E NULL END as inrecovery, CASE WHEN usesuper THEN pg_last_xl...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2018-07-24 14:28:30 ERROR  : Column not found in pgSet: usecreatedb
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: usesuper
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: upsince
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: confloadedsince
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: inrecovery
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: replayloc
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: receiveloc
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: replay_timestamp
+2018-07-24 14:28:31 ERROR  : Column not found in pgSet: isreplaypaused
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:28:32 ERROR  : Column not found in pgSet: rolcatupdate
+2018-07-24 14:29:17 ERROR  : ERROR:  error de sintaxis en o cerca de «auto_increment»
+LINE 43: id int not null auto_increment primary key, 
+                         ^
+2018-07-24 14:37:56 ERROR  : ERROR:  error de sintaxis en o cerca de «Maria»
+LINE 1: ... (booid,titel,publishyear,isbn)values(1,Ceroecima Maria, 201...
+                                                             ^
+2018-07-24 14:38:11 ERROR  : ERROR:  no existe la columna «booid» en la relación «books»
+LINE 1: insert into books (booid,titel,publishyear,isbn)values(1,Cer...
+                           ^
+2018-07-24 14:38:21 ERROR  : ERROR:  no existe la columna «titel» en la relación «books»
+LINE 1: insert into books (bookid,titel,publishyear,isbn)values(1,Ce...
+                                  ^
+2018-07-24 14:38:31 ERROR  : ERROR:  no existe la columna «titel» en la relación «books»
+LINE 1: insert into books (bookid,titel,publishyear,isbn)values(1,Ce...
+                                  ^
+2018-07-24 14:38:42 ERROR  : ERROR:  no existe la columna «ceroecimamaria»
+LINE 1: ...nto books (bookid,title,publishyear,isbn)values(1,CeroecimaM...
+                                                             ^
+2018-07-24 14:39:09 ERROR  : ERROR:  no existe la columna «ceroec»
+LINE 1: ...nto books (bookid,title,publishyear,isbn)values(1,Ceroec, 20...
+                                                             ^
+2018-07-24 14:39:36 ERROR  : ERROR:  INSERT tiene más columnas de destino que expresiones
+LINE 1: insert into books (bookid,title,publishyear,isbn)values(1,'C...
+                                                    ^
+2018-07-24 14:39:57 ERROR  : ERROR:  no existe la columna «k»
+LINE 1: ...title,publishyear,isbn)values(1,'Ceroecima Maria', 2011,k); 
+                                                                   ^
+2018-07-24 14:40:13 ERROR  : ERROR:  error de sintaxis en o cerca de «DECLARE»
+LINE 2: DECLARE mycursor CURSOR FOR SELECT * FROM Books;
+        ^
+2018-07-24 14:43:46 ERROR  : ERROR:  no existe la relación «strings»
+LINE 1: SELECT * FROM strings
+                      ^
+QUERY:  SELECT * FROM strings
+CONTEXT:  función PL/pgSQL josh_test() en la línea 6 en OPEN
+2018-07-24 14:44:09 ERROR  : ERROR:  el registro «row» no tiene un campo «val»
+CONTEXT:  sentencia SQL: «SELECT row.val»
+función PL/pgSQL josh_test() en la línea 10 en RETURN NEXT
+2018-07-24 14:45:19 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+  curs CURSOR FOR SELECT * FROM books;
+  row  RECORD;
+BEGIN
+  open curs;
+  LOOP
+    FETCH FROM books INTO row;
+    EXIT WHEN NOT FOUND;
+    return next row.val;
+  END LOOP;»
+LINE 2: RETURNS SETOF varchar AS $$
+                                 ^
+2018-07-24 14:45:39 ERROR  : ERROR:  error de sintaxis en o cerca de «FO»
+LINE 2: RETURNS SETOF varchar AS FO
+                                 ^
+2018-07-24 14:46:01 ERROR  : ERROR:  «books» no es una variable conocida
+LINE 9:     FETCH FROM books INTO row;
+                       ^
+2018-07-24 14:46:22 ERROR  : ERROR:  el registro «row» no tiene un campo «val»
+CONTEXT:  sentencia SQL: «SELECT row.val»
+función PL/pgSQL josh_test() en la línea 10 en RETURN NEXT
+2018-07-24 14:50:17 ERROR  : ERROR:  no existe el tipo «clientes»
+2018-07-24 14:50:34 ERROR  : ERROR:  no existe la relación «clientes»
+CONTEXT:  compilación de la función PL/pgSQL «expl_cursor1» cerca de la línea 5
+2018-07-24 14:52:03 ERROR  : ERROR:  error de sintaxis en o cerca de «REATE»
+LINE 1: REATE OR REPLACE FUNCTION expl_cursor1() RETURNS SETOF books...
+        ^
