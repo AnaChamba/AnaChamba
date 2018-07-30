@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+#cell0 { border-top: none; border-left: none; }
+#cell1 { border-top: none; }
+#cell2 { border-top: none; border-right: none; }
+#cell3 { border-left: none; }
+#cell4 { }
+#cell5 { border-right: none; }
+#cell6 { border-left: none; border-bottom: none; }
+#cell7 { border-bottom: none; }
+#cell8 { border-bottom: none; border-right: none; }
+body { background-color: #ffffff; zoom: 4; }
+p { text-align: center; }
+table { background-color: #000000; border-collapse: collapse; 
+    width: 250px; margin-left: auto; margin-right: auto; margin-top: 45px; }
+td { border: solid #000000; background-color: #ffffff; width: 21px; height: 21px; 
+    text-align: center; }
+.ready, .playing { background-color: #ffffff; }
+.winner { background-color: lightgreen; }
+.draw { background-color: yellow; }
